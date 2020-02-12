@@ -19,8 +19,8 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
-import com.financas.model.enuns.StatusLancamento;
-import com.financas.model.enuns.TipoLancamento;
+import com.financas.model.enums.StatusLancamento;
+import com.financas.model.enums.TipoLancamento;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.financas.model.enuns;
+package com.financas.model.enums;
 
 public enum StatusLancamento {
 	
