@@ -9,5 +9,7 @@ import com.financas.model.Usuario;
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
 	
 	boolean existsByEmail(String email);
+	
+	
 
 }
