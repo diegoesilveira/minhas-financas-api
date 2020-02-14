@@ -22,10 +22,18 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import com.financas.model.enums.StatusLancamento;
 import com.financas.model.enums.TipoLancamento;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
+@Entity
 public class Lancamento implements Serializable{
 
 	

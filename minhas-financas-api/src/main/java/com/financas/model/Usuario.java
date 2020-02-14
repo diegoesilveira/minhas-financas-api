@@ -10,6 +10,9 @@ import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
+import lombok.Builder;
+
+@Builder
 @Entity
 @Table(name = "usuario", schema = "financas")
 public class Usuario implements Serializable{
@@ -30,14 +33,14 @@ public class Usuario implements Serializable{
 	@NotEmpty(message = "Campo obrigatorio!")
 	private String senha;
 
+	
 	public Usuario() {
 	}
 
-	public Usuario(Integer id, 
-			@NotEmpty(message = "Campo obrigatorio!") String nome,
+	public Usuario(Integer id, @NotEmpty(message = "Campo obrigatorio!") String nome,
 			@NotEmpty(message = "Campo obrigatorio!") @Email String email,
 			@NotEmpty(message = "Campo obrigatorio!") String senha) {
-
+		super();
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
@@ -123,7 +126,11 @@ public class Usuario implements Serializable{
 	public String toString() {
 		return "Usuario [id=" + id + ", nome=" + nome + ", email=" + email + ", senha=" + senha + "]";
 	}
-	
-	
 
+	
+	
+	
+	
+	
+	
 }
